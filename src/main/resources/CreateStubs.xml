@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="createStubs">
+    <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport" />
+    <target name="target1">
+        <wsimport
+            wsdl="http://localhost:7001/FreeJaxWsProject1/SampleService?WSDL"
+            destdir="bin-gen"
+            sourcedestdir="src-gen"
+            keep="true"
+            verbose="true"
+            package="com.ndr.free.jaxws.client">
+        </wsimport>
+    </target>
+</project>
